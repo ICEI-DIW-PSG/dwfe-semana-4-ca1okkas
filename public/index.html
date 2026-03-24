@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spider-Verse | Explore o Multiverso</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header class="cabecalho-principal">
+        <div class="logo">
+            <h1>Spider-<span>Verse</span></h1>
+        </div>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aranhas">Aranhas</a></li>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-conteudo">
+                <h2>Qualquer um pode usar a máscara.</h2>
+                <p>Descubra as infinitas possibilidades e heróis espalhados pela Teia da Vida e do Destino.</p>
+                <a href="#aranhas" class="btn-primario">Explorar Variantes</a>
+            </div>
+        </section>
+
+        <section id="aranhas" class="secao-aranhas">
+            <h3 class="titulo-secao">Conheça os Aranhas</h3>
+            
+            <div class="grid-aranhas">
+                
+                <article class="spider-card">
+                    <img src="images/Miles.jpg" alt="Miles Morales" class="foto-aranha">
+                    <div class="card-info">
+                        <h4>Miles Morales</h4>
+                        <span class="universo">Terra-1610</span>
+                        <p>O jovem do Brooklyn que assumiu o manto após a morte do Peter Parker de seu universo.</p>
+                        <button class="btn-secundario">Ler História</button>
+                    </div>
+                </article>
+
+                <article class="spider-card">
+                    <img src="images/Gwen.jpg" alt="Gwen Stacy" class="foto-aranha">
+                    <div class="card-info">
+                        <h4>Gwen Stacy</h4>
+                        <span class="universo">Terra-65</span>
+                        <p>A baterista radiante que foi picada no lugar de Peter, tornando-se a Mulher-Aranha (Ghost-Spider).</p>
+                        <button class="btn-secundario">Ler História</button>
+                    </div>
+                </article>
+
+                <article class="spider-card">
+                    <img src="images/peter.jpg" alt="Peter B. Parker" class="foto-aranha">
+                    <div class="card-info">
+                        <h4>Peter B. Parker</h4>
+                        <span class="universo">Terra-616B</span>
+                        <p>Um Homem-Aranha mais velho, cansado, mas que reencontra seu propósito ao ser sugado para outro universo.</p>
+                        <button class="btn-secundario">Ler História</button>
+                    </div>
+                </article>
+
+                <article class="spider-card">
+                    <img src="images/miguel.jpg" alt="Miguel O'Hara" class="foto-aranha">
+                    <div class="card-info">
+                        <h4>Miguel O'Hara</h4>
+                        <span class="universo">Terra-928</span>
+                        <p>O Homem-Aranha do ano 2099, líder da Sociedade Aranha encarregada de proteger o cânone.</p>
+                        <button class="btn-secundario">Ler História</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-principal">
+        <p>&copy; 2026 Projeto Spider-Verse - Disciplina de Desenvolvimento Web</p>
+    </footer>
+
 </body>
 </html>

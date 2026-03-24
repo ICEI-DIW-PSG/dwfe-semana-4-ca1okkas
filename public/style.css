@@ -1,3 +1,189 @@
+/* --- (Paleta Spider-Verse) --- */
+:root {
+    --vermelho-aranha: #E30022;
+    --azul-aranha: #0047BB;
+    --preto-fundo: #111111;
+    --cinza-escuro: #222222;
+    --texto-claro: #F5F5F5;
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Reset  --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: aquamarine;
+    background-color: var(--preto-fundo);
+    color: var(--texto-claro);
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+}
+
+/* --- Cabeçalho --- */
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--cinza-escuro);
+    border-bottom: 3px solid var(--vermelho-aranha);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: var(--texto-claro);
+}
+
+.logo span {
+    color: var(--vermelho-aranha);
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: var(--texto-claro);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: var(--vermelho-aranha);
+}
+
+/* --- Seção Hero --- */
+.hero {
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+    /* --- IMAGEM DE FUNDO --- */
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('images/fundo.jpg'); 
+    
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-bottom: 5px solid var(--vermelho-aranha);
+}
+
+.hero-conteudo h2 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-conteudo p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* --- Botões --- */
+.btn-primario, .btn-secundario {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--vermelho-aranha);
+    color: var(--texto-claro);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primario:hover, .btn-secundario:hover {
+    background-color: #B3001A;
+    transform: scale(1.05);
+}
+
+/* --- Seção de Cards--- */
+.secao-aranhas {
+    padding: 60px 50px;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--vermelho-aranha);
+}
+
+.grid-aranhas {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* --- Spider Card --- */
+.spider-card {
+    background-color: var(--cinza-escuro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+}
+
+.spider-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 3px solid var(--azul-aranha);
+}
+
+.card-imagem {
+    height: 200px;
+    background-color: #333; 
+    
+}
+
+/* Ajuste para a imagem  */
+.foto-aranha {
+    width: 100%;    
+    height: 250px;    
+    object-fit: cover; 
+    display: block;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.universo {
+    display: inline-block;
+    background-color: var(--azul-aranha);
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+}
+
+/* --- Rodapé --- */
+.rodape-principal {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cinza-escuro);
+    border-top: 1px solid #333;
 }
